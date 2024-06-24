@@ -1,0 +1,148 @@
+/*.container-fluid {
+    background-color: lightgray;
+}
+*/
+*{
+    /*font-family: Helvetica, 'Times New Roman', Times, sans-serif;*/
+    font-family: Sofia;
+}
+@font-face {
+    font-family: Sofia;
+    src: url(../fonts/SofiaSans-VariableFont_wght.ttf);
+}
+.col-md-4 {
+    background-color: #aeaeae;
+    height: 300px;
+}
+
+.col-md-8 {
+    background-color: darkseagreen;
+    height: 300px;
+}
+.cont-sm{
+    padding-top: 80px;
+    flex: 1;
+    background-color: rgb(248,248,248);
+}
+.cont-fl{
+    margin-top: 80px;
+    flex: 1;
+}
+body{
+    background-color: #fff;
+    background-image: url(../img/background-img3.jpg);
+    background-blend-mode: luminosity, normal;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.gallery-item:hover{
+    opacity: 0.6;
+}
+.clear{
+    clear: both;
+}
+#big-gallery{
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index: 2000;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+#gal-img{
+    max-height: 90%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#slide-l{
+    background-color: #fff;
+    position: absolute;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2001;
+    margin: auto;
+    height: 70px;
+    width: auto;
+    user-select: none;
+    cursor: pointer;
+}
+#slide-r{
+    background-color: #fff;
+    position: absolute;
+    opacity: 0.4;
+    z-index: 2001;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 70px;
+    width: auto;
+    cursor: pointer;
+    user-select: none;
+}
+#slide-r>i{
+    margin-top: 11px;
+}
+#slide-l>i{
+    margin-top: 11px;
+}
+#exit{
+    background-color: #fff;
+    opacity: 0.4;
+    height: 50px;
+    width: 50px;
+    font-size: 80%;
+    z-index: 2001;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    user-select: none;
+    cursor: pointer;
+}
+#exit>i{
+    margin-top: 5.6px;
+}
+.slideC{
+    background-color: rgba(0,0,0,0.4);
+    width: auto;
+    opacity: 0.8;
+    margin: auto;
+    top: 0;
+    cursor: pointer;
+    user-select: none;
+}
+.slideC>i{
+    margin-top: 1.5vh;
+    margin-left: -0.5vh;
+    margin-right: -0.5vh;
+    padding-bottom: 1.5vh;
+}
+@media screen and (max-width: 992px){
+    #main-image{
+        width: 91.66666667%;
+        margin: auto;
+    }
+    #right{
+        text-align:center;
+        margin: 10px auto 13px 5px;
+    }
+    #left{
+        margin: 10px 5px 13px auto;
+    }
+    
+}
+#main-image{
+    min-height: auto;
+}
+.cont-sm>h2{
+    text-align:right;
+}
